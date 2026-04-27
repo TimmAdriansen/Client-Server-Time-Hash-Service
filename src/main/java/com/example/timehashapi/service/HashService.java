@@ -15,7 +15,6 @@ public class HashService {
 
     public HashService(HashGenerator hashGenerator) {
         this.hashGenerator = hashGenerator;
-        updateHash();
     }
 
     public HashResponseDTO getHash() {
@@ -24,8 +23,5 @@ public class HashService {
         String hash = hashGenerator.generate(currentTime.toString());
 
         return new HashResponseDTO(hash);
-    }
-
-    public void updateHash() {
     }
 }
