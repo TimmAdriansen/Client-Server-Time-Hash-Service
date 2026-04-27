@@ -1,0 +1,14 @@
+services:
+  timehash-api:
+    build: .
+    container_name: timehash-api
+    ports:
+      - "8080:8080"
+
+  client:
+    image: nginx:alpine
+    container_name: timehash-client
+    ports:
+      - "3000:80"
+    volumes:
+      - ./client:/usr/share/nginx/html:ro
