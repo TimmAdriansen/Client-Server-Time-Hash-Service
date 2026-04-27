@@ -23,7 +23,8 @@ This project implements a simple client-server system:
 docker compose up --build
 
 - Go to http://localhost:3000/ in browser
-- Logs will be shown in the terminal
+- Server logs will be shown in the terminal
+- Client logs will be shown on the webpage
 
 
 
